@@ -87,11 +87,11 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>GLEW STATIC;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\pavel\source\repos\OpenGL_GraphProject\Libraries\glfw-3.3.4\include;C:\Users\pavel\source\repos\OpenGL_GraphProject\Libraries\glew-2.1.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Libraries\glfw-3.3.4\include;$(SolutionDir)\Libraries\glew-2.1.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalDependencies>opengl32.lib;glew32sd.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\Users\pavel\source\repos\OpenGL_GraphProject\Libraries\glfw-3.3.4\src\Debug;C:\Users\pavel\source\repos\OpenGL_GraphProject\Libraries\glew-2.1.0\lib\Debug\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)\Libraries\glfw-3.3.4\src\Debug;$(SolutionDir)\Libraries\glew-2.1.0\lib\Debug\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -107,11 +107,11 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>GLEW_STATIC;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\pavel\source\repos\OpenGL_GraphProject\Libraries\glew-2.1.0\include;C:\Users\pavel\source\repos\OpenGL_GraphProject\Libraries\glfw-3.3.4\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Libraries\glew-2.1.0\include;$(SolutionDir)\Libraries\glfw-3.3.4\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalDependencies>opengl32.lib;glew32s.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\Users\pavel\source\repos\OpenGL_GraphProject\Libraries\glfw-3.3.4\src\Release;C:\Libraries\glew-2.1.0\glew-2.1.0\lib\Release\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)\Libraries\glfw-3.3.4\src\Release;$(SolutionDir)\glew-2.1.0\glew-2.1.0\lib\Release\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

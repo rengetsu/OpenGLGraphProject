@@ -42,38 +42,28 @@ int main(void)
 
         //  DRAW A GRID
 
+        //  Rows and columns number
         int rows = 10;
         int columns = 10;
 
         glBegin(GL_LINES);
 
+        //  Lines Color
         glColor3f(0.0, 0.22, 0.15);
 
-        //  HORIZONTAL LINES
+        //  Horizontal lines
         for (int i = 0; i < rows; i++)
         {
             glVertex2f( left, 120 - ( i * 30 ) );
             glVertex2f( right, 120 - ( i * 30 ) );
         }
 
-        //  VERTICAL LINES
+        //  Vertical lines
         for (int y = 0; y < columns; y++)
         {
             glVertex2f( right - (y * 270), left );
             glVertex2f( right - (y * 270), right );
         }
-
-
-        //glVertex2f(0, -120);
-        //glVertex2f(0, 120);
-
-
-        //glVertex2f(60, -120);
-        //glVertex2f(60, 120);
-
-
-        //glVertex2f(120, -120);
-        //glVertex2f(120, 120);
 
         glEnd();
 
